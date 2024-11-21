@@ -1,4 +1,5 @@
-﻿using System;
+﻿using C5_HK1B_Demo.BeeGame;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -11,28 +12,24 @@ namespace C5_HK1B_Demo
     {
         static void Main(string[] args)
         {
-            VienKhoaHoc vienKhoaHoc = new VienKhoaHoc();
+           Game game = new Game();
 
             while (true)
             {
-                Console.WriteLine("1. Nhap nhan vien");
-                Console.WriteLine("2. Xuat nhan vien");
-                Console.WriteLine("3. Xuat luong nhan vien");
-                Console.WriteLine("4. Thoat");
+                Console.WriteLine("1. Tan cong");
+                Console.WriteLine("2. Xuat thong tin");
+                Console.WriteLine("3. Thoat");
                 Console.Write("Chon: ");
                 int chon = int.Parse(Console.ReadLine());
                 switch (chon)
                 {
                     case 1:
-                        vienKhoaHoc.Nhap();
+                        game.AttackBees();
                         break;
                     case 2:
-                        vienKhoaHoc.Xuat();
+                        game.PrintBees();
                         break;
                     case 3:
-                        vienKhoaHoc.XuatLuong();
-                        break;
-                    case 4:
                         return;
                 }
             }

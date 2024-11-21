@@ -43,6 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BeeGame\Bee.cs" />
+    <Compile Include="BeeGame\Drone.cs" />
+    <Compile Include="BeeGame\Game.cs" />
+    <Compile Include="BeeGame\Queen.cs" />
+    <Compile Include="BeeGame\Worker.cs" />
     <Compile Include="NhaKhoaHoc.cs" />
     <Compile Include="NhanVien.cs" />
     <Compile Include="NhanVienPTN.cs" />
